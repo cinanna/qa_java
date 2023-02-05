@@ -13,7 +13,7 @@ public class FelineTest {
         Assert.assertEquals(result, food);
     }
     @Test
-    public void getFamily() {
+    public void getFamilyTest() {
         String result = "Кошачьи";
         String family = feline.getFamily();
         Assert.assertEquals(result, family);
@@ -25,7 +25,7 @@ public class FelineTest {
         Assert.assertEquals(result, kittens);
     }
     @Test
-    public void testGetKittens() {
+    public void getKittenTest() {
         int result = 1;
         int kittens = feline.getKittens();
         Assert.assertEquals(result, kittens);

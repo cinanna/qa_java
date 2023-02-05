@@ -14,16 +14,16 @@ public class LionTest {
     Feline feline;
 
     @Test
-    public void lionGetKittens() {
+    public void getKittensTest() throws Exception {
         int kittens = 1;
-        Lion lion = new Lion(feline);
+        Lion lion = new Lion("Самка", feline);
         Mockito.when(feline.getKittens()).thenReturn(1);
         int result = lion.getKittens();
         Assert.assertEquals(kittens, result);
     }
     @Test
     public void getFoodTest() throws Exception {
-        Lion lion = new Lion(feline);
+        Lion lion = new Lion("Самец", feline);
         List<String> result = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> food = lion.getFood();

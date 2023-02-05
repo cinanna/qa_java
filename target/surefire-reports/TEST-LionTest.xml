@@ -65,5 +65,5 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="LionTest" name="getFoodTest" time="0.012"/>
-  <testcase classname="LionTest" name="lionGetKittens" time="0.001"/>
+  <testcase classname="LionTest" name="getKittensTest" time="0.001"/>
 </testsuite>
